@@ -26,8 +26,8 @@ const SignIn = () => {
           Login
         </button>
 
-        <a href='/signin' className='block text-center mt-4 text-sm text-gray-600'>
-          Already have an account? Sign In
+        <a href='/signup' className='block text-center mt-4 text-sm text-gray-600'>
+          Already have an account? Sign Up
         </a>  
      </div>
     </div>
