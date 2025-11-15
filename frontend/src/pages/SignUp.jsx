@@ -13,14 +13,18 @@ const SignUp = () => {
      style={{border: `1px solid ${borderColor}`}} >
       <h1 className={`text-3xl font-bold mb-2 text-center`} style={{color:primaryColor}}>Vingo</h1>
 
+       <input type='text' placeholder='Username'
+        className="w-full p-3 mb-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-1"
+        />
+
        <input type="email" placeholder="Email"
         className="w-full p-3 mb-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-1"
        />
 
        <input type='password' placeholder='Password'
         className="w-full p-3 mb-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-1"/>
-
-        <button className={`w-full p-3 rounded text-white font-semibold hover:opacity-90 transition`}
+        
+      <button className={`w-full p-3 rounded text-white font-semibold hover:opacity-90 transition`}
          style={{backgroundColor: primaryColor}}
         >
           Login
