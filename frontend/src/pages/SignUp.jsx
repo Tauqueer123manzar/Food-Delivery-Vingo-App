@@ -27,7 +27,7 @@ const SignUp = () => {
       <button className={`w-full p-3 rounded text-white font-semibold cursor-pointer hover:opacity-90 transition`}
          style={{backgroundColor: primaryColor}}
         >
-          Login
+          Register
         </button>
 
         <a href='/signin' className='block text-center mt-4 text-sm text-gray-600'>
