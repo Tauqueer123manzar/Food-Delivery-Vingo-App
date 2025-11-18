@@ -15,7 +15,7 @@ return (
 
 {/* Desktop Menu */}
     <ul className="hidden md:flex gap-8 text-gray-700 font-medium">
-      <li className="cursor-pointer hover:text-[#ff4d2d] transition">Home</li>
+      <li className="cursor-pointer hover:text-[#ff4d2d] transition"><a href="/"/>Home</li>
       <li className="cursor-pointer hover:text-[#ff4d2d] transition">About Us</li>
       <li className="cursor-pointer hover:text-[#ff4d2d] transition">Services</li>
       <li className="cursor-pointer hover:text-[#ff4d2d] transition">Contact</li>
