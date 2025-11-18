@@ -10,11 +10,12 @@ const SignUp = () => {
   const borderColor = "#ddd";
 
   const [showPassword, setShowPassword] = useState(true);
+  const [role, setRole] = useState("User");
 
   return (
-    <div className='min-h-screen w-full flex items-center justify-center p-4'
+    <div className='min-h-screen w-full flex items-center justify-center p-2'
       style={{ backgroundColor: bgColor }}>
-      <div className={`bg-white rounded-xl shadow-lg w-full max-w-md p-8 border-$[1px]`}
+      <div className={`bg-white rounded-xl shadow-lg w-full max-w-lg p-8 border-$[1px]`}
         style={{ border: `1px solid ${borderColor}` }} >
         <h1 className={`text-3xl font-bold mb-2 text-center`} style={{ color: primaryColor }}>Vingo</h1>
 
@@ -51,8 +52,26 @@ const SignUp = () => {
           </div>
         </div>
 
+        <div className='mb-2 flex flex-col'>
+          <label htmlFor="role" className='block text-gray-700 font-semibold mb-1'>Select Role</label>
+          <div className='relative'>
+            {["User", "Owner", "Delivery"].map((item) => {
+              return (
+                <button
+                  key={item}
+                  className={`w-1/4 md:w-1/4 p-2 mb-4 rounded border  focus:outline-none focus:ring-2 focus:ring-offset-1 ${role === item ? 'bg-orange-500 text-white' : ''} `}
+                  style={{ border: `1px solid ${borderColor}`, marginRight: '14px' }}
+                  onClick={() => setRole(item)}
+                >
+                  {item}
+                </button>
+              )
+            })}
+          </div>
+        </div>
         <button className={`w-full p-2 rounded text-white font-semibold cursor-pointer hover:opacity-90 transition`}
           style={{ backgroundColor: primaryColor }}
+          onClick={(e) => e.preventDefault() || alert("Submitted")}
         >
           Register
         </button>
