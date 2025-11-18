@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 export default function VingoHome() {
   const [query, setQuery] = useState("");
@@ -12,6 +13,7 @@ export default function VingoHome() {
   };
 
   return (
+    <>
     <div className="min-h-screen bg-white text-[#ff4d2d] flex flex-col items-center px-6 py-10 mt-10">
       {/* Hero Section */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl">
@@ -54,6 +56,9 @@ export default function VingoHome() {
         />
       </div>
     </div>
-    
+     <div className="mt-2">
+        <Footer/>
+    </div>
+    </>
   );
 }

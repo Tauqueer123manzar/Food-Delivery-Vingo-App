@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer';
 
 const SignIn = () => {
   const primaryColor = "#ff4d2d";
@@ -7,6 +8,7 @@ const SignIn = () => {
   const borderColor = "#ddd";
 
   return (
+    <>
     <div className='min-h-screen w-full flex items-center justify-center p-4'
       style={{ backgroundColor: bgColor }}>
       <div className={`bg-white rounded-xl shadow-lg w-full max-w-md p-8 border-$[1px]`}
@@ -31,6 +33,10 @@ const SignIn = () => {
         </a>
       </div>
     </div>
+    <div className='mt-2'>
+      <Footer/>
+    </div>
+    </>
   )
 }
 

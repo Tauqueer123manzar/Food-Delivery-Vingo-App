@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import Footer from '../components/Footer';
 
 const SignUp = () => {
   const primaryColor = "#ff4d2d";
@@ -13,6 +14,7 @@ const SignUp = () => {
   const [role, setRole] = useState("User");
 
   return (
+    <>
     <div className='min-h-screen w-full flex items-center justify-center p-2 mt-16'
       style={{ backgroundColor: bgColor }}>
       <div className={`bg-white rounded-xl shadow-lg w-full max-w-lg p-8 border-$[1px]`}
@@ -81,6 +83,10 @@ const SignUp = () => {
         </a>
       </div>
     </div>
+    <div className='mt-2'>
+      <Footer/>
+    </div>
+    </>
   )
 }
 
