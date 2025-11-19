@@ -42,7 +42,7 @@ const foodCategories = [
       "https://images.unsplash.com/photo-1550547660-d9450f859349",
   },
    {
-    name: "Chicken Shawarma",
+    name: "Shawarma",
     image:
       "https://tse4.mm.bing.net/th/id/OIP.8n3C3ujyVSuYzaGxp1MV1QHaE7?pid=Api&P=0&h=180",
   },
@@ -55,7 +55,7 @@ const foodCategories = [
 
 export default function FoodCategories() {
   return (
-    <section className="w-full bg-white py-12 px-6">
+    <section className="w-full py-12">
       <h2 className="text-3xl md:text-4xl font-bold text-[#ff4d2d] text-center mb-6">
         Order Our Best Food Options
       </h2>
