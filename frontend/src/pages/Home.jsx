@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import FoodCategories from "../components/FoodCategories";
 
 export default function VingoHome() {
   const [query, setQuery] = useState("");
@@ -55,7 +56,12 @@ export default function VingoHome() {
           className="w-full max-w-lg rounded-2xl shadow-2xl"
         />
       </div>
+       <section className="w-full bg-white px-6">
+      <FoodCategories />
+    </section>
     </div>
+
+
      <div className="mt-2">
         <Footer/>
     </div>
