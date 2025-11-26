@@ -12,9 +12,13 @@ export default function Footer() {
 
         {/* Logo + About */}
         <div>
-          <h2 className="text-2xl font-bold mb-2">Your Logo</h2>
-          <p className="text-gray-400 mb-6">Your Tagline here</p>
-
+         <a href="/" className="flex items-center gap-2">
+          <div className="w-10 h-10 bg-[#ff4d2d] rounded-full flex items-center justify-center text-white font-bold text-xl">
+            V
+          </div>
+          <span className="text-xl font-semibold text-[#ff4d2d]">Vingo</span>
+        </a>
+        
           <h3 className="text-[#ff4d2d] font-semibold mb-2">About Us</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
             We want to help bring talented students and unique startups together.
