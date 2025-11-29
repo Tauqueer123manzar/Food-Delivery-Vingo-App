@@ -18,9 +18,8 @@ export default function Footer() {
           </div>
           <span className="text-xl font-semibold text-[#ff4d2d]">Vingo</span>
         </a>
-        
-          <h3 className="text-[#ff4d2d] font-semibold mb-2">About Us</h3>
-          <p className="text-gray-300 text-sm leading-relaxed">
+
+          <p className="text-gray-300 text-sm leading-relaxed mt-4">
             We want to help bring talented students and unique startups together.
           </p>
 
