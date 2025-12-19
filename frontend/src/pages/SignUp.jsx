@@ -19,7 +19,7 @@ const SignUp = () => {
       style={{ backgroundColor: bgColor }}>
       <div className={`bg-white rounded-xl shadow-lg w-full max-w-lg p-8 border-$[1px]`}
         style={{ border: `1px solid ${borderColor}` }} >
-        <h1 className={`text-3xl font-bold mb-2 text-center`} style={{ color: primaryColor }}>Vingo</h1>
+        <h1 className={`text-2xl font-semibold mb-2 text-center`} style={{ color: primaryColor }}>User Signup</h1>
 
         <p className='text-gray-600 mb-8'>Create your account to get started with delicious food deliveries</p>
 
