@@ -79,7 +79,7 @@ const SignUp = () => {
         </button>
 
         <a href='/signin' className='block text-center mt-4 text-sm text-gray-600'>
-          Already have an account? Sign In
+          Already have an account? <span className='font-medium text-blue-600'>Sign In</span>
         </a>
       </div>
     </div>
